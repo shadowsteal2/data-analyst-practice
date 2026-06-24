@@ -2,7 +2,7 @@
 
 <!-- Enlaces con formato de insignias -->
 
-[!\[English](https://img.shields.io/badge/English-blue)](README.md) [!\[Español](https://img.shields.io/badge/Español-green)](README-es.md)
+[![English](https://img.shields.io/badge/English-blue)](README.md) [![Español (https://img.shields.io/badge/Español-green)](README-es.md)
 
 
 
