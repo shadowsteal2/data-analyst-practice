@@ -2,7 +2,9 @@
 
 <!-- Enlaces con formato de insignias -->
 
-[![English](https://img.shields.io/badge/English-blue)](README.md) [![Español](https://img.shields.io/badge/Español-green)](README-es.md)
+You can change the language of the README using this links:
+[![English README](https://img.shields.io/badge/English-blue)](README.md) 
+[![Spanish README](https://img.shields.io/badge/Español-green)](README-es.md)
 
 
 
