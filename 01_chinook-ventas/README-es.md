@@ -1,8 +1,9 @@
-# Chinook Digital Music Store: Sales \& Marketing Analysis
+# Tienda de Música Digital Chinook: Ventas \& Análisis de Márquetin
 
 <!-- Enlaces con formato de insignias -->
 
 Puedes cambiar el idioma del README con los siguientes enlaces:
+
 [![README Inglés](https://img.shields.io/badge/English-blue)](README.md)
 [![README Español](https://img.shields.io/badge/Español-green)](README-es.md)
 
@@ -14,7 +15,7 @@ Puedes cambiar el idioma del README con los siguientes enlaces:
 
 Análisis integral de las ventas de la tienda digital Chinook para guiar la asignación del presupuesto de marketing del Q3. El proyecto abarca la extracción de datos de una base de datos relacional, validación y análisis exploratorio, y la creación de un cuadro de mando interactivo.
 
-## Insights Principales
+## Conclusiones Principales
 
 * **Dominio del género X:** Representa el X% de los ingresos totales...
 * **Top Mercados:** USA y Canadá lideran la facturación, pero el mercado X muestra el ticket medio más alto.
@@ -26,7 +27,7 @@ Análisis integral de las ventas de la tienda digital Chinook para guiar la asig
 2. **Validación y Transformación (Python):** Uso de Pandas para auditar los resultados de SQL, calcular el crecimiento intermensual (MoM) y preparar el dataset final para visualización. *(Ver `/python`)*
 3. **Visualización (Power BI):** Desarrollo de un dashboard interactivo enfocado en el seguimiento mensual y el rendimiento de los mercados.
 
-## Dashboard Interactivo
+## Visuales Interactivo
 
 <!-- Añade aquí una captura de tu PowerBI -->
 
