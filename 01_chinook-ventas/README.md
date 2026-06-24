@@ -1,58 +1,38 @@
-# Ejercicio 01 — Ventas de una tienda de música digital (Chinook)
+# Chinook Digital Music Store: Sales \& Marketing Analysis
 
-<!-- Botones de navegación de idioma -->
+<!-- Enlaces con formato de insignias -->
 
-*Read this in other languages:* [*English*](README.md)*,* [*Español*](README-es.md)*.*
+[!\[English](https://img.shields.io/badge/English-blue)](README.md) [!\[Español](https://img.shields.io/badge/Español-green)](README-es.md)
 
 
 
-**Herramientas:** SQL · Python · Power BI
+**Tools:** SQL · Python (Pandas, Matplotlib) · Power BI
 
-## Objetivo de negocio
+## Project Overview
 
-Eres analista de la tienda y dirección quiere decidir dónde enfocar el presupuesto de marketing del próximo trimestre. Preguntas a responder:
+Comprehensive analysis of Chinook digital store sales to guide Q3 marketing budget allocation. This project encompasses data extraction from a relational database, validation, exploratory data analysis (EDA), and the creation of an interactive dashboard to drive strategic decision-making.
 
-* ¿Qué géneros generan más ingresos?
-* ¿Qué artistas son el top 10 por ingresos?
-* ¿Qué países son los mercados más fuertes?
-* ¿Cómo evoluciona la facturación mes a mes?
+## Key Findings
 
-## Datos
+* **Genre Dominance:** Genre X accounts for X% of total revenue...
+* **Top Markets:** The US and Canada lead in total billing, but market Y shows the highest average order value (AOV).
+* **Seasonality:** A recurring sales peak is observed during the months of...
 
-* Fuente: [Chinook Database](https://github.com/lerocha/chinook-database) — base de datos de muestra de una tienda de música digital (artistas, álbumes, pistas, facturas, clientes).
-* Descarga: [última release](https://github.com/lerocha/chinook-database/releases) → asset `Chinook\\\\\\\_Sqlite.sqlite`.
-* Para explorarla sin código: [DB Browser for SQLite](https://sqlitebrowser.org).
+## Methodology \& Workflow
 
-## Tareas
+1. **Extraction (SQL):** Queried the SQLite database to extract key performance indicators (KPIs) regarding billing by country, genre, artist, and temporal evolution. *(See `/sql`)*
+2. **Validation \& Transformation (Python):** Used Pandas to audit SQL results, calculate Month-over-Month (MoM) growth, and prepare the final clean dataset for visualization. *(See `/python`)*
+3. **Visualization (Power BI):** Developed an interactive dashboard focused on monthly tracking and regional market performance.
 
-### SQL (`sql/consultas.sql`)
+## Interactive Dashboard
 
-Una query comentada por pregunta:
+<!-- Update the image path with your actual screenshot -->
 
-1. Ingresos totales por género, orden desc.
-2. Top 10 artistas por ingresos.
-3. Ingresos por país, orden desc.
-4. Ingresos agrupados por mes.
-5. Ticket medio (avg) por país.
+!\[Power BI Dashboard Preview](path-to-your-image.png)
 
-### Python (`python/analisis.py`)
+## Repository Structure
 
-* Reproducir las queries 1 y 4 con `pandas` (`groupby`/`agg`) y comprobar que cuadran con SQL.
-* Calcular el % de crecimiento mes a mes de los ingresos (`pct\\\\\\\_change()`).
-* Un gráfico (matplotlib/seaborn): evolución mensual de ingresos.
-* Exportar a CSV/Excel una tabla limpia (mes, país, género, ingresos) para Power BI.
-
-### Power BI (`powerbi/dashboard\\\\\\\_ventas.pbix`)
-
-* Origen de datos: el CSV/Excel exportado desde Python.
-* Visuales mínimos: 2 KPI cards (ingresos totales, ticket medio), barra top géneros, barra top países, línea evolución mensual, slicer por año.
-* Exportar a PDF + captura de pantalla.
-
-## Checklist
-
-* \[ ] 5 queries SQL comentadas, cada una resolviendo una pregunta de negocio.
-* \[ ] Script Python que valida 2 de esas queries con pandas + 1 análisis exclusivo de Python + 1 gráfico.
-* \[ ] CSV/Excel exportado listo para Power BI.
-* \[ ] Dashboard con ≥4 visuales + 2 KPIs, `.pbix` + PDF/imagen.
-* \[ ] Todo subido a `data-analyst-practice` con `add -A` → `commit` → `push`.
+* `/sql`: Commented queries addressing the core business questions.
+* `/python`: Exploratory analysis scripts and final dataset generation.
+* `/powerbi`: `.pbix` file and PDF export of the dashboard.
 
